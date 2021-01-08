@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>components/Background.qml</file>
+        <file>components/Clock.qml</file>
+        <file>components/Panel.qml</file>
+        <file>components/DateText.qml</file>
+        <file>components/Fonts.qml</file>
+        <file>components/PaletteColours.qml</file>
+        <file>components/PasswordInput.qml</file>
+        <file>components/UserChooser.qml</file>
+        <file>components/LoginButton.qml</file>
+        <file>components/ControlBar.qml</file>
+        <file>components/SystemControlsModel.qml</file>
+    </qresource>
+</RCC>
