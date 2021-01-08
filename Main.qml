@@ -39,7 +39,7 @@ Item {
         ColumnLayout{
             id: loginForm
             Layout.bottomMargin: 25
-            spacing: 30
+            //spacing: 30
             Layout.fillWidth: true
             Layout.fillHeight: true
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
@@ -47,9 +47,19 @@ Item {
 
             UserChooser{
                 id: userChooser
+
+                Layout.bottomMargin: 0
+                Layout.topMargin:30
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 Layout.preferredWidth:  parent.width *0.7
 
+            }
+
+            CapsLockWarning{
+                Layout.bottomMargin: 0
+                Layout.topMargin:0
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                isOn: keyboard.capsLock
             }
 
             PasswordInput{
@@ -59,6 +69,9 @@ Item {
                 loginFailed: container.loginFailed
                 Keys.onEnterPressed: container.login()
                 Keys.onReturnPressed: container.login()
+
+                Layout.bottomMargin: 15
+                Layout.topMargin:0
             }
 
             LoginButton{
@@ -67,6 +80,9 @@ Item {
                 onClicked: container.login();
                 Keys.onEnterPressed: container.login();
                 Keys.onReturnPressed: container.login();
+
+                Layout.bottomMargin:30
+                Layout.topMargin:15
             }
         }
     }

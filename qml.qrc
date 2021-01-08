@@ -12,5 +12,6 @@
         <file>components/LoginButton.qml</file>
         <file>components/ControlBar.qml</file>
         <file>components/SystemControlsModel.qml</file>
+        <file>components/CapsLockWarning.qml</file>
     </qresource>
 </RCC>
